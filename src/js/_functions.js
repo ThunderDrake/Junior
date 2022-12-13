@@ -18,7 +18,7 @@ console.log(mobileCheck())
 // window.addEventListener('resize', func);
 
 // Фикс фулскрин-блоков
-// import './functions/fix-fullheight';
+import './functions/fix-fullheight';
 
 // Реализация бургер-меню
 // import { burger } from './functions/burger';
@@ -38,7 +38,8 @@ console.log(mobileCheck())
 // const tabs = new GraphTabs('tab');
 
 // Получение высоты шапки сайта (не забудьте вызвать функцию)
-// import { getHeaderHeight } from './functions/header-height';
+import { getHeaderHeight } from './functions/header-height';
+getHeaderHeight();
 
 // Подключение плагина кастом-скролла
 // import 'simplebar';

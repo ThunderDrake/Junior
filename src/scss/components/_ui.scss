@@ -1,0 +1,75 @@
+.hover-gradient {
+  span {
+    position: relative;
+    color: transparent;
+
+    &::before,
+    &::after {
+      content: attr(data-text);
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+    }
+
+    &::before {
+      -webkit-text-fill-color: transparent;
+      background: linear-gradient(90deg, #fff 0, #fff 100%);
+      -webkit-background-clip: text;
+      opacity: 1;
+      -webkit-transition: opacity 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+      -o-transition: opacity 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+      transition: opacity 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+      pointer-events: none;
+    }
+
+    &::after {
+      -webkit-text-fill-color: transparent;
+      background: linear-gradient(289.54deg, #062446 18.81%, #23a4db 70.95%, #062446 101%);
+      -webkit-background-clip: text;
+      opacity: 0;
+      -webkit-transition: opacity 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+      -o-transition: opacity 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+      transition: opacity 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+      pointer-events: none;
+    }
+  }
+
+  &:hover {
+    span {
+      &::before {
+        opacity: 0;
+      }
+
+      &::after {
+        opacity: 1;
+        -webkit-animation: transfusion 30s linear infinite;
+        animation: transfusion 30s linear infinite;
+      }
+    }
+  }
+}
+
+@keyframes transfusion {
+  0% {
+    background-position: 0 0;
+  }
+
+  25% {
+    background-position: 50em 0;
+  }
+
+  50% {
+    background-position: 100em 0;
+  }
+
+  75% {
+    background-position: 150em 0;
+  }
+
+  100% {
+    background-position: 200em 0;
+  }
+}

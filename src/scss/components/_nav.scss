@@ -1,0 +1,20 @@
+.nav {
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__link {
+    position: relative;
+    font-family: var(--font-family-second);
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 1;
+    color: var(--light-color);
+
+    &:hover {
+      color: rgba(#fff, 0.9);
+    }
+  }
+}
