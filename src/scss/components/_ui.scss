@@ -52,6 +52,17 @@
   }
 }
 
+.gradient-button {
+  background: linear-gradient(289.54deg, #219bd4 10.43%, #1161a0 32.96%, #0b4c8e 51.89%, #1675b2 70.82%, #23a4db 96.95%);
+  background-position: 0 0;
+  background-size: 200%;
+  transition: background-position 0.3s ease-in-out;
+
+  &:hover {
+    background-position: 100% 0;
+  }
+}
+
 @keyframes transfusion {
   0% {
     background-position: 0 0;
