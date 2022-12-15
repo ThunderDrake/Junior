@@ -63,6 +63,21 @@
   }
 }
 
+.h2-title {
+  margin: 0;
+  margin-bottom: 0.85em;
+  font-family: var(--font-family-second);
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 100%;
+  text-align: center;
+  color: var(--downriver-color);
+
+  @include mobile {
+    font-size: 50px;
+  }
+}
+
 @keyframes transfusion {
   0% {
     background-position: 0 0;

@@ -19,8 +19,16 @@ html {
   margin: 0;
   min-width: 320px;
   min-height: 100%;
-  font-size: 1.6rem;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 25px;
+  letter-spacing: -0.02em;
+  color: #062446;
   background-color: var(--alabaster-gray);
+
+  @include mobile {
+    font-size: 1.6rem;
+  }
 }
 
 img {
