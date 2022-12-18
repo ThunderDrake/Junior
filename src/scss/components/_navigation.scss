@@ -2,6 +2,7 @@
   position: absolute;
   left: -100%;
   top: 0;
+  z-index: 4;
   overflow: hidden;
   padding-top: calc(var(--header-height) + 100px);
   width: 100%;
