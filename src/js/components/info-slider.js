@@ -7,12 +7,12 @@ if(window.matchMedia("(max-width: 576px)").matches) {
   const swiper = new Swiper(infoSlider, {
     slidesPerView: 1.25,
     pagination: {
-      el: '.swiper-pagination',
+      el: '.info .swiper-pagination',
       type: 'fraction',
     },
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.info .swiper-button-next',
+      prevEl: '.info .swiper-button-prev',
     },
   });
 }

@@ -84,9 +84,9 @@
   }
 }
 
-.swiper-pagination,
-.swiper-button-prev,
-.swiper-button-next {
+.info .swiper-pagination,
+.info .swiper-button-prev,
+.info .swiper-button-next {
   display: none;
 
   @include mobile {

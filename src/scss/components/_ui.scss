@@ -82,6 +82,61 @@
   margin-right: 10px;
 }
 
+.graph-modal {
+  background: linear-gradient(289.54deg, rgb(11 76 142 / 90%) 10.43%, rgb(35 164 219 / 90%) 96.95%);
+  background-color: transparent;
+
+  @include mobile {
+    background: linear-gradient(289.54deg, #fff 10.43%, #fff 96.95%);
+  }
+}
+
+.graph-modal__container {
+  border-radius: 40px;
+  padding: 0;
+  max-width: 960px;
+
+  @include mobile {
+    margin: 0;
+    width: 99%;
+  }
+}
+
+.graph-modal__close {
+  position: absolute;
+  right: -60px;
+  top: -60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 300px;
+  padding: 22px;
+  width: 60px;
+  height: 60px;
+  background-image: none;
+  background-color: var(--light-color);
+  cursor: pointer;
+
+  &-icon {
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-image: url("data:image/svg+xml,%3Csvg width='16' height='17' viewBox='0 0 16 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.5 1L15.5 16' stroke='%230B4C8E'/%3E%3Cpath d='M15.5 1L0.5 16' stroke='%230B4C8E'/%3E%3C/svg%3E ");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  @include mobile {
+    right: 10px;
+    top: 10px;
+    border: 1px solid #0b4c8e;
+    padding: 12px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
 @keyframes transfusion {
   0% {
     background-position: 0 0;
