@@ -6,10 +6,18 @@
     <div class="form-section__container container">
   }
     <div class="form-section__image">
-      <picture>
-        <source srcset="img/form-section/form-section__image-1.webp" type="image/webp">
-        <img loading="lazy" src="img/form-section/form-section__image-1.jpg" class="form-section__image-image" width="660" height="660" alt="Дети тренируются на футбольном поле">
-      </picture>
+      @if (!context.revert === true) {
+        <picture>
+          <source srcset="img/form-section/form-section__image-1.webp" type="image/webp">
+          <img loading="lazy" src="img/form-section/form-section__image-1.jpg" class="form-section__image-image" width="660" height="660" alt="Дети тренируются на футбольном поле">
+        </picture>
+      }
+      @if (context.revert === true) {
+        <picture>
+          <source srcset="img/form-section/form-section__image-2.webp" type="image/webp">
+          <img loading="lazy" src="img/form-section/form-section__image-2.jpg" class="form-section__image-image" width="660" height="660" alt="Дети тренируются на футбольном поле">
+        </picture>
+      }
     </div>
     <div class="form-section__content">
       <h2 class="form-section__title">Запишитесь на пробную тренеровку</h2>

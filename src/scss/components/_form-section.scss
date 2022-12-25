@@ -5,6 +5,10 @@
     display: flex;
     flex-wrap: nowrap;
 
+    &--revert {
+      flex-direction: row-reverse;
+    }
+
     @include tablet {
       flex-direction: column;
     }
