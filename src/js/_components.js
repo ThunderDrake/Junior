@@ -5,3 +5,4 @@ import "./components/form-validation.js";
 import "./components/steps.js";
 import "./components/team-slider.js";
 import "./components/team-modal.js";
+import "./components/schedule-selects.js";
