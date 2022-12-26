@@ -7,3 +7,4 @@ import "./components/team-slider.js";
 import "./components/team-modal.js";
 import "./components/schedule-selects.js";
 import "./components/news-slider.js";
+import "./components/partners-slider.js";
