@@ -27,11 +27,13 @@ const swiper = new Swiper(reviewsSlider, {
     },
     769: {
       slidesPerView: 3,
+      slidesOffsetBefore: 40,
+      slidesOffsetAfter: 40,
+    },
+    1025: {
+      slidesPerView: 5,
       slidesOffsetBefore: 0,
       slidesOffsetAfter: 0,
-    },
-    1024: {
-      slidesPerView: 5,
     }
   }
 });
