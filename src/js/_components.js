@@ -8,3 +8,4 @@ import "./components/team-modal.js";
 import "./components/schedule-selects.js";
 import "./components/news-slider.js";
 import "./components/partners-slider.js";
+import "./components/review-slider.js";
