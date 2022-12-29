@@ -11,3 +11,4 @@ import "./components/partners-slider.js";
 import "./components/review-slider.js";
 import "./components/faq-accordion.js";
 import "./components/products-slider.js";
+import "./components/contacts-map.js";
