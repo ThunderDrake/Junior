@@ -10,3 +10,4 @@ import "./components/news-slider.js";
 import "./components/partners-slider.js";
 import "./components/review-slider.js";
 import "./components/faq-accordion.js";
+import "./components/products-slider.js";
