@@ -24,7 +24,7 @@ function init() {
     iconImageOffset: [-15, -40],
     balloonContentSize: [270, 99],
     balloonLayout: "default#imageWithContent",
-    balloonImageHref: '/design/img/ballon1.png',
+    balloonImageHref: '/img/map-marker.png',
     balloonImageOffset: [-65, -89],
     balloonImageSize: [260, 89],
     balloonShadow: false,
