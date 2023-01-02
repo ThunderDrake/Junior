@@ -1,4 +1,10 @@
-<header class="header">
+@if (context.inner === true) {
+<header class="header header--inner">
+}
+@if (!context.inner === true) {
+  <header class="header">
+
+}
   <div class="container header__container">
     <div class="logo header__logo">
       <img loading="lazy" src="img/logo.svg" class="log__image" width="100" height="128" alt="ФК Джуниор логотип школы">
