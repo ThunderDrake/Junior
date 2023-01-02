@@ -9,19 +9,19 @@
           <nav class="footer__menu">
             <ul class="footer__menu-list list-reset">
               <li class="footer__menu-item">
-                <a class="footer__menu-link hover-gradient" href="#"><span data-text="Цели и принципы">Цели и принципы</span></a>
+                <a class="footer__menu-link hover-gradient" href="/#info"><span data-text="Цели и принципы">Цели и принципы</span></a>
               </li>
               <li class="footer__menu-item">
-                <a class="footer__menu-link hover-gradient" href="#"><span data-text="Преимущества">Преимущества</span></a>
+                <a class="footer__menu-link hover-gradient" href="/#advantages"><span data-text="Преимущества">Преимущества</span></a>
               </li>
               <li class="footer__menu-item">
-                <a class="footer__menu-link hover-gradient" href="#"><span data-text="Наша команда">Наша команда</span></a>
+                <a class="footer__menu-link hover-gradient" href="/#team"><span data-text="Наша команда">Наша команда</span></a>
               </li>
               <li class="footer__menu-item">
-                <a class="footer__menu-link hover-gradient" href="#"><span data-text="Новости">Новости</span></a>
+                <a class="footer__menu-link hover-gradient" href="/#news"><span data-text="Новости">Новости</span></a>
               </li>
               <li class="footer__menu-item">
-                <a class="footer__menu-link hover-gradient" href="#"><span data-text="Продукция">Продукция</span></a>
+                <a class="footer__menu-link hover-gradient" href="/#production"><span data-text="Продукция">Продукция</span></a>
               </li>
             </ul>
           </nav>
@@ -30,19 +30,19 @@
           <nav class="footer__menu">
             <ul class="footer__menu-list list-reset">
               <li class="footer__menu-item">
-                <a class="footer__menu-link hover-gradient" href="#"><span data-text="Расписание">Расписание</span></a>
+                <a class="footer__menu-link hover-gradient" href="/#schedule"><span data-text="Расписание">Расписание</span></a>
               </li>
               <li class="footer__menu-item">
-                <a class="footer__menu-link hover-gradient" href="#"><span data-text="Отзывы">Отзывы</span></a>
+                <a class="footer__menu-link hover-gradient" href="/#reviews"><span data-text="Отзывы">Отзывы</span></a>
               </li>
               <li class="footer__menu-item">
-                <a class="footer__menu-link hover-gradient" href="#"><span data-text="Контакты">Контакты</span></a>
+                <a class="footer__menu-link hover-gradient" href="/#contacts"><span data-text="Контакты">Контакты</span></a>
               </li>
               <li class="footer__menu-item">
-                <a class="footer__menu-link hover-gradient" href="#"><span data-text="Вопросы и ответы">Вопросы и ответы</span></a>
+                <a class="footer__menu-link hover-gradient" href="/#faq"><span data-text="Вопросы и ответы">Вопросы и ответы</span></a>
               </li>
               <li class="footer__menu-item">
-                <a class="footer__menu-link hover-gradient" href="/comands-single.html/"><span data-text="Сборные команды клуба">Сборные команды клуба</span></a>
+                <a class="footer__menu-link hover-gradient" href="/comands-single.html"><span data-text="Сборные команды клуба">Сборные команды клуба</span></a>
               </li>
             </ul>
           </nav>
@@ -73,10 +73,10 @@
 <script type="text/javascript" src="https://api-maps.yandex.ru/2.0/?load=package.full&amp;lang=ru-RU&amp;apikey=b73c0e8a-498f-418c-be32-cf873e56b1fe"></script>
 <script type="text/javascript">
   /*<![CDATA[*/
-  ymaps.ready(init);
-			var myMap;
 
-			if(document.querySelector('#map')) {
+  if(document.querySelector('#map')) {
+    ymaps.ready(init);
+        var myMap;
         function init() {
 				myMap = new ymaps.Map('map', {
 					center: [55.050107, 82.941280],

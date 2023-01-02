@@ -1,6 +1,7 @@
 .hover-gradient {
   span {
     position: relative;
+    display: inline-block;
     color: transparent;
 
     &::before,
