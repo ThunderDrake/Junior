@@ -2,7 +2,8 @@
   ymaps.ready(init);
 			var myMap;
 
-			function init() {
+			if(document.querySelector('#map')) {
+        function init() {
 				myMap = new ymaps.Map('map', {
 					center: [55.050107, 82.941280],
 					behaviors: ['default'],
@@ -193,4 +194,5 @@
 
 				myMap.geoObjects.add(myCollection);
 				myMap.setBounds(myCollection.getBounds());
-			}</script></div></body></html>
+			}
+      }</script></div></body></html>
