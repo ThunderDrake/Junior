@@ -25,7 +25,7 @@
       right: 0;
       width: 28px;
       height: 1px;
-      background-color: var(--light-color);
+      background-color: currentcolor;
     }
 
     &::before {
@@ -35,6 +35,11 @@
     &::after {
       transform: translateY(3px);
     }
+  }
+
+  &:hover {
+    border-color: transparent;
+    background: linear-gradient(289.54deg, #0b4c8e 10.43%, #23a4db 96.95%);
   }
 }
 
